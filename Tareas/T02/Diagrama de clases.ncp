@@ -1,0 +1,225 @@
+<Project>
+  <Name>Tarea 2</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Diagrama de clases</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Planeta</Name>
+        <Access>Public</Access>
+        <Location left="874" top="411" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public ListaLigada[] paises</Member>
+        <Member type="Method">public None propagar_infeccion()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Pais</Name>
+        <Access>Public</Access>
+        <Location left="874" top="681" />
+        <Size width="162" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public str nombre</Member>
+        <Member type="Field">public ListaLigada[] vecinos</Member>
+        <Member type="Field">public ListaLigada[] aeropuerto</Member>
+        <Member type="Field">public Gobierno[] gob</Member>
+        <Member type="Field">public int poblacion</Member>
+        <Member type="Field">public int sanos</Member>
+        <Member type="Field">public int infectados</Member>
+        <Member type="Field">public int muertos</Member>
+        <Member type="Field">public tuple respaldos</Member>
+        <Member type="Field">public Infeccion[] tipo</Member>
+        <Member type="Method">public bool esta_infectado()</Member>
+        <Member type="Method">public bool esta_muerto()</Member>
+        <Member type="Method">public None contagiar_pais()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Gobierno</Name>
+        <Access>Public</Access>
+        <Location left="874" top="1033" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Pais[] pais</Member>
+        <Member type="Method">public bool cerrar_aeropuertos()</Member>
+        <Member type="Method">public bool cerrar_fronteras()</Member>
+        <Member type="Method">public bool cerrar_pais()</Member>
+        <Member type="Method">public bool mandar_mascarillas()</Member>
+        <Member type="Method">public bool buscar_cura()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Infeccion</Name>
+        <Access>Public</Access>
+        <Location left="1198" top="737" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public float resistencia</Member>
+        <Member type="Field">public float visibilidad</Member>
+        <Member type="Field">public float mortalidad</Member>
+        <Member type="Field">public float contagiosidad</Member>
+        <Member type="Method">public abstract None matar()</Member>
+        <Member type="Method">public abstract None morir()</Member>
+        <Member type="Method">public abstract None contagiar()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Virus</Name>
+        <Access>Public</Access>
+        <Location left="1406" top="737" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public override None matar()</Member>
+        <Member type="Method">public override None morir()</Member>
+        <Member type="Method">public override None contagiar()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Bacteria</Name>
+        <Access>Public</Access>
+        <Location left="1406" top="1033" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public override None matar()</Member>
+        <Member type="Method">public override None morir()</Member>
+        <Member type="Method">public override None contagiar()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Parasito</Name>
+        <Access>Public</Access>
+        <Location left="1198" top="1033" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public override None matar()</Member>
+        <Member type="Method">public override None morir()</Member>
+        <Member type="Method">public override None contagiar()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Partida</Name>
+        <Access>Public</Access>
+        <Location left="833" top="54" />
+        <Size width="248" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Planeta[] planeta</Member>
+        <Member type="Method">public None menu()</Member>
+        <Member type="Method">public ListaLigada[] cargar_partida(file archivo)</Member>
+        <Member type="Method">public None guardar_partida()</Member>
+        <Member type="Method">public None estadisticas()</Member>
+        <Member type="Method">public None pasar_dia()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaLigada</Name>
+        <Access>Public</Access>
+        <Location left="600" top="702" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public None cola</Member>
+        <Member type="Field">public None cabeza</Member>
+        <Member type="Method">public None append(unknown valor)</Member>
+        <Member type="Method">public None clear()</Member>
+        <Member type="Method">public int count(unknown valor)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Nodo</Name>
+        <Access>Public</Access>
+        <Location left="551" top="429" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public unknown valor</Member>
+        <Member type="Field">public unknown siguiente</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="4" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="8" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>849</X>
+          <Y>519</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>739</X>
+          <Y>677</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

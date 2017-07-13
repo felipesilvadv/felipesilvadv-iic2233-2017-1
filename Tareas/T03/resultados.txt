@@ -1,0 +1,31 @@
+None
+Consulta 1
+None
+Consulta 2
+False
+Consulta 3
+None
+Consulta 4
+None
+Consulta 5
+2500.759466337619
+Consulta 6
+0.039729247689759176
+Consulta 7
+1249.9998915992685
+Consulta 8
+None
+Consulta 9
+Error de consulta: graficar
+        Causa: Referencia Invalida
+Consulta 10
+None
+Consulta 11
+True
+Consulta 12
+Error de consulta: graficar
+                  Causa: Imposible Procesar
+                  Detalle: largos distintos
+Consulta 13
+None
+Consulta 14
