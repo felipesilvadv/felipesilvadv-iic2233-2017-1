@@ -9,7 +9,11 @@ from post_comment_issue import comment_issue
 aplicacion = flask.Flask(__name__)
 
 lista_chats = []
-
+class Usuario:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.deuda_total = 0
+        self.deuda_mes = 0
 
 @aplicacion.route("/Telegram", methods=["POST"])
 def argumento_get():
@@ -81,6 +85,12 @@ def git_post():
                                   "\n{}".format(err))
     finally:
         return ""
+
+@aplicacion.route("/turno", methods=["POST"])
+def turno():
+    pass
+
+
 def mandar_mensaje(chat_id, mensaje):
     url = "https://api.telegram.org/" \
           "bot430672963:AAGNYlLy5V-8teMWFaRaYBgpQQadYfkWFoQ/"
