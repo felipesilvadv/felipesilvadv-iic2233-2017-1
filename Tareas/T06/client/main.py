@@ -6,7 +6,8 @@ from PyQt5.QtCore import pyqtSignal, QObject
 from PyQt5.QtGui import QCloseEvent
 
 PORT = 1206
-HOST = "felipe-X451CAP"
+#HOST = "felipe-X451CAP"
+HOST = "felipe-X405UQ"
 #HOST = "192.168.1.135"
 #HOST = "10.221.28.142"
 

@@ -8,8 +8,8 @@ from random import choice, shuffle
 PORT = 1206
 #HOST = "192.168.1.135"
 #HOST = "10.221.28.142"
-HOST = "felipe-X451CAP"
-
+#HOST = "felipe-X451CAP"
+HOST = "felipe-X405UQ"
 def set_id():
     contador = 0
     while True:
